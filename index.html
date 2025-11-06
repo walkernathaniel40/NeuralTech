@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NueroTech Dream Catcher - Capture Your Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9;
+        }
+        .hero-bg {
+            background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+        }
+        /* Custom visualization circle to mock an EEG reading */
+        .eeg-viz {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, rgba(139, 92, 246, 0.8) 0%, rgba(139, 92, 246, 0.4) 30%, rgba(139, 92, 246, 0) 70%);
+            animation: pulse 2.5s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Header & Navigation (Simple) -->
+    <header class="p-4 bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-indigo-700">NueroTech</div>
+            <a href="#purchase" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition">Pre-Order Now</a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-bg py-16 md:py-24 text-white text-center rounded-b-xl shadow-lg">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                Never Lose a <span class="text-indigo-400">Million-Dollar Idea</span> Again.
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-8 text-gray-300">
+                The Dream Catcher: Your passive, neurological safety net for genius that strikes when you're least prepared.
+            </p>
+
+            <!-- Mockup Image Placeholder -->
+            <div class="w-full max-w-lg mx-auto mb-8 relative">
+                <img src="https://placehold.co/800x400/374151/ffffff?text=Dream+Catcher+Headband+Mockup" alt="Dream Catcher EEG Headband Product Mockup" class="rounded-lg shadow-2xl">
+                <!-- Simple CTA button -->
+                <a href="#purchase" class="inline-block cta-button bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-10 rounded-full text-lg mt-8 transform hover:scale-105 transition duration-300">
+                    Capture My Genius
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. The Problem Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">The World's Greatest Bottleneck: Memory Failure</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">The Sleep Void</h3>
+                    <p class="text-gray-600">The most profound ideas often strike during the **hypnagogic state**—the moment you are too asleep to move, but too conscious to record. These thoughts are immediately lost.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Distraction Overload</h3>
+                    <p class="text-gray-600">In our hyper-busy world, a brief moment of insight is instantly overwritten by email pings, notifications, and task switching. Clarity is lost to noise.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 0l-3.536 3.536m3.536-3.536A8.96 8.96 0 0112 18c-2.4 0-4.66-.9-6.36-2.64M3 12h2.07M12 3v2.07M20 12h-2.07M7.7 7.7L9.8 9.8m4.4-4.4L11.5 7.7"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Age & Decay</h3>
+                    <p class="text-gray-600">Memory naturally declines. Great ideas from experience, wisdom, or complex reasoning vanish permanently, eliminating potential solutions for the next generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. How It Works (The Technology) -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">How NueroTech Captures the Unconscious</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">It's not a recorder. It's an **Intelligent Neural Filter.**</p>
+
+            <div class="flex flex-col md:flex-row items-center justify-around space-y-12 md:space-y-0">
+                <!-- Step 1: Detection -->
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <div class="eeg-viz flex items-center justify-center mb-4 relative">
+                        <span class="absolute text-xl font-bold text-white">40Hz</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">1. Neural Detection</h3>
+                    <p class="text-gray-600">Advanced non-invasive EEG sensors passively scan brain activity, identifying the **unique Gamma wave signature (40Hz)** associated with profound, high-value insight.</p>
+                </div>
+
+                <!-- Arrow Icon -->
+                <svg class="w-16 h-16 text-indigo-400 rotate-90 md:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+
+                <!-- Step 2: Compression -->
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <svg class="w-16 h-16 mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">2. Cognitive Compression</h3>
+                    <p class="text-gray-600">NueroTech's AI instantly filters the data, distilling the essence of the idea into a **concise, text-based mind map**—the "cognitive footprint"—before it fades.</p>
+                </div>
+
+                <!-- Arrow Icon -->
+                <svg class="w-16 h-16 text-indigo-400 rotate-90 md:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+
+                <!-- Step 3: Retrieval -->
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <svg class="w-16 h-16 mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 014 4v2a4 4 0 01-2.903 3.903"></path></svg>
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">3. Secure Retrieval</h3>
+                    <p class="text-gray-600">The summary is uploaded via Wi-Fi to your secure, encrypted cloud platform, ready to be reviewed on your phone or laptop the moment you wake up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Security and Privacy Callout -->
+    <section class="py-16 px-4 bg-gray-800 text-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:space-x-8">
+            <svg class="w-16 h-16 mb-6 md:mb-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.03 12.03 0 005.9 12c0 2.827 1.838 5.485 4.545 7.424A9.914 9.914 0 0012 21c2.185 0 4.195-.733 5.8-1.954"></path></svg>
+            <div>
+                <h2 class="text-3xl font-bold mb-3">Your Genius is Sacred. Our Data is Private.</h2>
+                <p class="text-lg text-gray-300">NueroTech's model is subscription-based, not data-based. All neural data is **anonymized, encrypted, and governed by strict protocols.** Your thoughts are yours—we never share or sell raw data. Your privacy is our competitive advantage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Purchase & CTA Section -->
+    <section id="purchase" class="py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto p-8 bg-white rounded-xl shadow-2xl border border-indigo-200">
+            <h2 class="text-4xl font-extrabold mb-4 text-gray-800">Secure Your Genius Today</h2>
+            <p class="text-xl text-gray-600 mb-8">Stop losing the thoughts that could change your life. Pre-order the Dream Catcher now and start harvesting your full potential.</p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 items-center">
+                <div class="text-left">
+                    <p class="text-3xl font-bold text-indigo-700">$349.99</p>
+                    <p class="text-sm text-gray-500">One-time purchase</p>
+                </div>
+
+                <a href="#" class="cta-button w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-4 px-12 rounded-full text-xl transform hover:scale-105 transition duration-300">
+                    Pre-Order Now
+                </a>
+            </div>
+
+            <p class="mt-6 text-sm text-gray-500">Includes 1-year complimentary access to NueroTech Cloud Platform. Risk-free 60-day trial.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-center text-gray-400">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; 2025 NueroTech. All rights reserved. Dream Catcher is a neurological wellness device, not a medical device.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#" class="hover:text-white">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
